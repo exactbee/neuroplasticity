@@ -49,6 +49,42 @@ This is a DSA (Data Structures & Algorithms) practice repository structured arou
 ***/
 ```
 
+## Scaffolding a New Problem
+
+When asked to "add problem N" or "scaffold problem N":
+
+1. **Fill the file** at the correct `solutions/NNN_slug.ts` path using the header template above. Source the problem statement, examples, and constraints from LeetCode (the URL is in the stub or can be inferred from the slug).
+2. **Leave the solution as a stub** — a function signature with `// TODO` and a placeholder return. Never write the solution body; that is the user's work.
+3. **Add test inputs** covering the given examples plus at least one edge case, and log each result with a labeled `console.log`.
+4. **Mark complete** in the topic `README.md` — change `[ ]` to `[x]` for that problem.
+
+Do all four steps in one pass unless the user says otherwise.
+
+## Commit Message Format
+
+All commits follow this pattern: `<type>: NNN title — short description`
+
+Multiple types can be combined with `+` when a commit covers more than one concern: `fix + notes: NNN title — ...`
+
+| Type | When to use |
+|---|---|
+| `solve` | User writes and completes a solution |
+| `scaffold` | New problem stub + tests added, no solution body |
+| `fix` | Bug fix in an existing solution |
+| `refactor` | Restructure/cleanup without changing behavior |
+| `test` | Test cases added or corrected |
+| `notes` | Notes added to `notes.md` or inline comments |
+| `chore` | Repo maintenance with no specific problem (no NNN) |
+
+Examples:
+```
+solve: 003 valid anagram — frequency map + dual array approach
+scaffold: 007 remove duplicates from sorted array
+fix: 004 two-pointer bug — anchor left to right on new minimum
+notes: 006 merge sorted array — backward iteration alternative + edge cases
+test: 006 merge sorted array — add out-of-bounds edge case
+```
+
 ## Python Environment
 
 Python 3.12 is installed at `C:\Users\werco\AppData\Local\Programs\Python\Python312\python.exe`. Use `py -3.12` to invoke it from the shell. `pdfplumber` is already installed for reading the guide PDF.
