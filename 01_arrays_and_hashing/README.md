@@ -15,7 +15,7 @@
 | 5 | Maximum Subarray (Kadane's) | Easy | [x] |
 | 6 | Merge Sorted Array | Easy | [x] |
 | 7 | Move Zeroes | Easy | [x] |
-| 8 | Plus One | Easy | [ ] |
+| 8 | Plus One | Easy | [x] |
 | 9 | Single Number | Easy | [ ] |
 | 10 | Intersection of Two Arrays II | Easy | [ ] |
 | 11 | Product of Array Except Self | Medium | [ ] |
