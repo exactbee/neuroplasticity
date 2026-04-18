@@ -8,13 +8,13 @@
 
 | # | Title | Difficulty | Done |
 |---|---|---|---|
-| 1 | Two Sum | Easy | [ ] |
-| 2 | Contains Duplicate | Easy | [ ] |
-| 3 | Valid Anagram | Easy | [ ] |
+| 1 | Two Sum | Easy | [x] |
+| 2 | Contains Duplicate | Easy | [x] |
+| 3 | Valid Anagram | Easy | [x] |
 | 4 | Best Time to Buy and Sell Stock | Easy | [x] |
 | 5 | Maximum Subarray (Kadane's) | Easy | [x] |
 | 6 | Merge Sorted Array | Easy | [x] |
-| 7 | Move Zeroes | Easy | [ ] |
+| 7 | Move Zeroes | Easy | [x] |
 | 8 | Plus One | Easy | [ ] |
 | 9 | Single Number | Easy | [ ] |
 | 10 | Intersection of Two Arrays II | Easy | [ ] |
