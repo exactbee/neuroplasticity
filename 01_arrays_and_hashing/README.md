@@ -16,7 +16,7 @@
 | 6 | Merge Sorted Array | Easy | [x] |
 | 7 | Move Zeroes | Easy | [x] |
 | 8 | Plus One | Easy | [x] |
-| 9 | Single Number | Easy | [ ] |
+| 9 | Single Number | Easy | [x] |
 | 10 | Intersection of Two Arrays II | Easy | [ ] |
 | 11 | Product of Array Except Self | Medium | [ ] |
 | 12 | Top K Frequent Elements | Medium | [ ] |
