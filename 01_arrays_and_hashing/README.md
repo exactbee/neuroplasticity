@@ -20,7 +20,7 @@
 | 10 | Intersection of Two Arrays II | Easy | [x] |
 | 11 | Product of Array Except Self | Medium | [x] |
 | 12 | Top K Frequent Elements | Medium | [x] |
-| 13 | Encode and Decode Strings | Medium | [ ] |
+| 13 | Encode and Decode Strings | Medium | [x] |
 | 14 | Longest Consecutive Sequence | Medium | [ ] |
 | 15 | Group Anagrams | Medium | [ ] |
 | 16 | 3Sum | Medium | [ ] |
