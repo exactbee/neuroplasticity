@@ -30,13 +30,28 @@ function subarraySum(nums: number[], k: number): number {
 }
 
 const tests: Array<{ nums: number[]; k: number; expected: number }> = [
+  // from problem statement
   { nums: [1, 1, 1], k: 2, expected: 2 },
   { nums: [1, 2, 3], k: 3, expected: 2 },
-  { nums: [1], k: 1, expected: 1 },           // single element equals k
-  { nums: [1], k: 0, expected: 0 },           // single element, no match
-  { nums: [0, 0, 0], k: 0, expected: 6 },     // all zeros, every subarray sums to 0
-  { nums: [-1, -1, 1], k: 0, expected: 1 },   // negative numbers
-  { nums: [3, 4, 7, 2, -3, 1, 4, 2], k: 7, expected: 4 },
+  // single element
+  { nums: [1], k: 1, expected: 1 },
+  { nums: [1], k: 0, expected: 0 },
+  // k = 0 edge cases
+  { nums: [0, 0, 0], k: 0, expected: 6 },                            // all zeros: every subarray sums to 0
+  { nums: [0, 0, 0, 0], k: 0, expected: 10 },                        // 4 zeros: C(5,2) = 10 subarrays
+  // negative numbers
+  { nums: [-1, -1, 1], k: 0, expected: 1 },
+  { nums: [-1, 1, -1, 1], k: 0, expected: 4 },                       // multiple cancelling pairs
+  // large arrays (10+ elements)
+  { nums: [3, 4, 7, 2, -3, 1, 4, 2, 0, 5], k: 7, expected: 5 },
+  { nums: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k: 15, expected: 4 },    // 1+2+3+4+5, 4+5+6, 6+9, 7+8
+  { nums: [1, -1, 1, -1, 1, -1, 1, -1, 1, -1], k: 0, expected: 25 },// alternating +1/-1
+  { nums: [10, 2, -2, -20, 10, 0, 0, 0, 1, 2], k: -10, expected: 3 },
+  { nums: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], k: 5, expected: 6 },      // all 1s, window of 5
+  // k larger than any subarray sum
+  { nums: [1, 2, 1, 2, 1], k: 100, expected: 0 },
+  // entire array is the only subarray matching k
+  { nums: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k: 55, expected: 1 },
 ];
 
 for (const test of tests) {
