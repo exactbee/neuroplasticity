@@ -18,6 +18,18 @@
    Output: 2
    Reason: [3] at index 2, and [1,2] at indices 0–1.
 
+   Input:  nums = [0,0,0,0], k = 0
+   Output: 10
+   Reason: Every subarray sums to 0; there are C(5,2) = 10 subarrays total.
+
+   Input:  nums = [1,2,3,4,5,6,7,8,9,10], k = 15
+   Output: 3
+   Reason: [1,2,3,4,5]=15, [4,5,6]=15, [7,8]=15.
+
+   Input:  nums = [1,-1,1,-1,1,-1,1,-1,1,-1], k = 0
+   Output: 25
+   Reason: Alternating +1/-1 array; every even-length subarray sums to 0.
+
  CONSTRAINTS:
    1 <= nums.length <= 2 * 10^4
    -1000 <= nums[i] <= 1000
@@ -44,7 +56,7 @@ const tests: Array<{ nums: number[]; k: number; expected: number }> = [
   { nums: [-1, 1, -1, 1], k: 0, expected: 4 },                       // multiple cancelling pairs
   // large arrays (10+ elements)
   { nums: [3, 4, 7, 2, -3, 1, 4, 2, 0, 5], k: 7, expected: 5 },
-  { nums: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k: 15, expected: 4 },    // 1+2+3+4+5, 4+5+6, 6+9, 7+8
+  { nums: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k: 15, expected: 3 },    // [1..5], [4,5,6], [7,8]
   { nums: [1, -1, 1, -1, 1, -1, 1, -1, 1, -1], k: 0, expected: 25 },// alternating +1/-1
   { nums: [10, 2, -2, -20, 10, 0, 0, 0, 1, 2], k: -10, expected: 3 },
   { nums: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], k: 5, expected: 6 },      // all 1s, window of 5
