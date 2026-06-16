@@ -1,2 +1,23 @@
 .claude/
 node_modules/
+
+# Claude Code — personal/local settings (never commit these)
+.claude/settings.local.json
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+# Editor
+.vscode/
+.idea/
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+# Added by code-review-graph
+.code-review-graph/
+# Playwright generated output (cli.config.json IS committed — shared config)
+playwright-report/
+test-results/
+.playwright/output/
