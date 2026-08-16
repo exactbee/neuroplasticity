@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 106 | Reverse Linked List | Easy | [x] |
 | 107 | Merge Two Sorted Lists | Easy | [x] |
-| 108 | Linked List Cycle | Easy | [ ] |
+| 108 | Linked List Cycle | Easy | [x] |
 | 109 | Linked List Cycle II (Find Start) | Medium | [ ] |
 | 110 | Middle of Linked List | Easy | [ ] |
 | 111 | Remove Nth Node From End | Medium | [ ] |
