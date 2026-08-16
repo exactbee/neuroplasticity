@@ -7,7 +7,7 @@
 | # | Title | Difficulty | Done |
 |---|---|---|---|
 | 106 | Reverse Linked List | Easy | [x] |
-| 107 | Merge Two Sorted Lists | Easy | [ ] |
+| 107 | Merge Two Sorted Lists | Easy | [x] |
 | 108 | Linked List Cycle | Easy | [ ] |
 | 109 | Linked List Cycle II (Find Start) | Medium | [ ] |
 | 110 | Middle of Linked List | Easy | [ ] |
