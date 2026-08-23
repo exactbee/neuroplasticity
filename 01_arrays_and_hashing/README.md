@@ -26,7 +26,7 @@
 | 16 | 3Sum | Medium | [ ] |
 | 17 | Container With Most Water | Medium | [ ] |
 | 18 | Subarray Sum Equals K | Medium | [x] |
-| 19 | Next Permutation | Medium | [ ] |
+| 19 | Next Permutation | Medium | [x] |
 | 20 | Rotate Array | Medium | [ ] |
 | 21 | First Missing Positive | Hard | [ ] |
 | 22 | Trapping Rain Water | Hard | [ ] |
